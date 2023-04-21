@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="ttt.js" type="module"></script>
+    <script src="minimax.js" type="module"></script>
+</head>
+
+<body>
+
+    <div class="appContainer">
+        <div class="boardBorder">
+            <h1>Tic-Tac-Toe</h1>
+            <div id="tttBoard">
+                <div id="TL" class="gameSpace" onclick="fillIn('TL')"></div>
+                <div id="TC" class="gameSpace" onclick="fillIn('TC')"></div>
+                <div id="TR" class="gameSpace" onclick="fillIn('TR')"></div>
+                <div id="ML" class="gameSpace" onclick="fillIn('ML')"></div>
+                <div id="MC" class="gameSpace" onclick="fillIn('MC')"></div>
+                <div id="MR" class="gameSpace" onclick="fillIn('MR')"></div>
+                <div id="BL" class="gameSpace" onclick="fillIn('BL')"></div>
+                <div id="BC" class="gameSpace" onclick="fillIn('BC')"></div>
+                <div id="BR" class="gameSpace" onclick="fillIn('BR')"></div>
+            </div>
+            <div id="winnerContainer">
+
+            </div>
+            <button type="button" id="restart">Restart</button>
+        </div>
+        <div class="explanation">
+            <p>This is a Tic-Tac-Toe which implements the <a href="https://en.wikipedia.org/wiki/Minimax">Minimax
+                    algorithm</a> with a slight twist.</p>
+            <p>
+                Namely, since tic tac toe is a game with a small move set, I decided not to put a look-ahead mechanism
+                in.
+                This means that that the algorithm will simulate all possible iterations of the game and pick the
+                optimal
+                move.
+                It has a strong bias towards winning, a small bias towards a draw, and a strong bias against losing.
+                basically, it is impossible to win :)
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

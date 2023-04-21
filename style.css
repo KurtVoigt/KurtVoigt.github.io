@@ -1,0 +1,110 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    height: 97vh;
+    width: 97vw;
+    background-image: url("./forest.jpg");
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.appContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2ch;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.boardBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2ch;
+
+    @media only screen and (min-width: 992px) {
+        height: 60%;
+        width: 30%;
+        margin-top: 10%;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 992px) {
+        margin-top: 25%;
+        height: 40%;
+        width: 70%;
+    }
+
+    background-color: rgba(0, 47, 53, 0.6);
+    border-radius: 1ch;
+}
+
+.explanation {
+    background-color: rgba(0, 47, 53, 0.6);
+    border-radius: 1ch;
+    height: fit-content;
+    @media only screen and (min-width: 992px) {
+        width: 30%;
+    }
+
+    ;
+
+
+    @media only screen and (min-width: 600px) and (max-width: 992px) {
+        width: 70%;
+    }
+
+    ;
+
+
+}
+
+
+#tttBoard {
+    display: grid;
+    border: 2px solid rgb(0, 74, 47);
+    width: 60%;
+    height: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+
+.gameSpace {
+    border: 3px solid rgb(0, 74, 47);
+    text-align: center;
+    padding-top: 15%;
+    font-size: 5ch;
+}
+
+#winnerContainer {
+    height: 2ch;
+    font-size: 3ch;
+    text-align: center;
+}
+
+#restart {
+    background-color: rgba(0, 74, 47, 0.6);
+    border-radius: 4px;
+    height: 4ch;
+    width: 30%;
+    font-size: clamp(15px, 2.5vw, 23px);
+    margin-bottom: 3px;
+    border-color: rgba(0, 74, 47);
+}
