@@ -16,7 +16,6 @@ for (let x = 0; x < boardState.length; x++) {
 
 
 function fillIn(spaceName) {
-    console.log('clicked');
     let space = document.getElementById(spaceName);
     let winnerDiv = document.getElementById("winnerContainer");
     let index;

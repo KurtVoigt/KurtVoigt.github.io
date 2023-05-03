@@ -75,7 +75,7 @@ h1 {
 
 #winnerContainer {
     height: 2ch;
-    font-size: 3ch;
+    font-size: clamp(1ch,2ch,3ch);
     text-align: center;
 }
 
