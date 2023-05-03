@@ -37,43 +37,23 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 2ch;
-
-    @media only screen and (min-width: 992px) {
-        height: 60%;
-        width: 30%;
-        margin-top: 10%;
-    }
-
-    @media only screen and (min-width: 400px) and (max-width: 992px) {
-        margin-top: 25%;
-        height: 40%;
-        width: 70%;
-    }
-
+    width: clamp(300px, 50%, 500px);
+    height: clamp(400px, 50%, 600px);
     background-color: rgba(0, 47, 53, 0.6);
     border-radius: 1ch;
 }
 
 .explanation {
-    background-color: rgba(0, 47, 53, 0.6);
+    background-color: rgba(0, 47, 53, 0.9);
     border-radius: 1ch;
     height: fit-content;
-    @media only screen and (min-width: 992px) {
-        width: 30%;
-    }
-
-    ;
-
-
-    @media only screen and (min-width: 600px) and (max-width: 992px) {
-        width: 70%;
-    }
-
-    ;
-
+    width: clamp(300px, 40%, 500px);
 
 }
 
+.explanation>p {
+    padding: 1ch;
+}
 
 #tttBoard {
     display: grid;
